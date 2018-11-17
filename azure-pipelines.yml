@@ -8,6 +8,13 @@ pool:
 
 steps:
 - script: |
-    cmake
+    echo 'Run CMake...'
+    cmake .
+    echo 'Run make...'
     make
   displayName: 'make'
+
+- script: |
+     echo 'Run smoke test...'
+     ./main
+  displayName: 'test'
