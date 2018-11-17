@@ -17,4 +17,4 @@ steps:
 - script: |
      echo 'Run smoke test...'
      ./main
-   displayName: 'test'
+  displayName: 'test'
