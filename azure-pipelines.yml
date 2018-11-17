@@ -8,5 +8,8 @@ pool:
 
 steps:
 - script: |
-    cmake & make
+    echo 'Execute CMake...'
+    cmake .
+    echo 'Execute make...'
+    make
   displayName: 'make'
